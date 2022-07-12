@@ -24,9 +24,9 @@ int print_specials(char next, va_list arg)
 		{"X", print_HEX},
 		{NULL, NULL}
 	};
-	for (index = 0; functs[index].identifier != NULL; index++)
+	for (index = 0; functs[index].indentifier != NULL; index++)
 	{
-		if (functs[index].identifier[0] == next)
+		if (functs[index].indentifier[0] == next)
 			return (functs[index].printer(arg));
 	}
 	return (0);

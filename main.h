@@ -19,6 +19,7 @@ int _putchar(char c);
 int _print_char(va_list arg);
 int _print_str(va_list arg);
 int _print_int(va_list arg);
-int _call_print_fn(char ch, va_list ap);
+int _call_print_fn(char ch, va_list arg);
+int print_specials(char next, va_list arg);
 
 #endif /* PRINTF_H */
