@@ -2,7 +2,7 @@ printf(3) — Linux manual page
 NAME | SYNOPSIS | DESCRIPTION | RETURN VALUE | ATTRIBUTES | CONFORMING TO | NOTES | BUGS | EXAMPLES | SEE ALSO | COLOPHON
 
 
- 
+
 PRINTF(3)               Linux Programmer's Manual              PRINTF(3)
 NAME         top
        printf, fprintf, dprintf, sprintf, snprintf, vprintf, vfprintf,
