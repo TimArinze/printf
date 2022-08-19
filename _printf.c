@@ -2,7 +2,8 @@
 /**
  * _printf - function that works as printf
  * @format: character string
- * Return: the number of the characters printed and -1 for incomplete special function
+ * Return: the number of the characters printed
+ * and -1 for incomplete special function
  */
 int _printf(const char *format, ...)
 {

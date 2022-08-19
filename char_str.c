@@ -4,7 +4,7 @@
 /**
  * print_char - function that prints character
  * @arg: The argument
- * return: interger
+ * Return: interger
  */
 int print_char(va_list arg)
 {
