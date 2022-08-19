@@ -69,7 +69,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
 Our main files will include your main header file (main.h): #include main.h
 You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf. Example of test file that you could use:
-alex@ubuntu:~/c/printf$ cat main.c 
+alex@ubuntu:~/c/printf$ cat main.c
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
@@ -169,7 +169,6 @@ You don’t have to handle the length modifiers
 Repo:
 
 GitHub repository: printf
-     
 1. Education is when you read the fine print. Experience is what you get if you don't
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
@@ -184,7 +183,6 @@ You don’t have to handle the length modifiers
 Repo:
 
 GitHub repository: printf
-     
 2. With a face like mine, I do better in print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -211,7 +209,6 @@ alex@ubuntu:~/c/printf$
 Repo:
 
 GitHub repository: printf
-    
 3. What one has not experienced, one will never understand in print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -228,7 +225,6 @@ You don’t have to handle the length modifiers
 Repo:
 
 GitHub repository: printf
-     
 4. Nothing in fine print is ever good news
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -237,7 +233,6 @@ Use a local buffer of 1024 chars in order to call write as little as possible.
 Repo:
 
 GitHub repository: printf
-     
 5. My weakness is wearing too much leopard print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -265,7 +260,6 @@ alex@ubuntu:~/c/printf$
 Repo:
 
 GitHub repository: printf
-    
 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -278,7 +272,6 @@ You don’t have to handle the length modifiers
 Repo:
 
 GitHub repository: printf
-     
 7. The big print gives and the small print takes away
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -289,8 +282,7 @@ space
 #
 Repo:
 
-GitHub repository: printf
-     
+GitHub repository: printf  
 8. Sarcasm is lost in print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -303,7 +295,6 @@ Conversion specifiers to handle: d, i, u, o, x, X
 Repo:
 
 GitHub repository: printf
-     
 9. Print some money and give it to us for the rain forests
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -312,7 +303,6 @@ Handle the field width for non-custom conversion specifiers.
 Repo:
 
 GitHub repository: printf
-     
 10. The negative is the equivalent of the composer's score, and the print the performance
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -321,7 +311,6 @@ Handle the precision for non-custom conversion specifiers.
 Repo:
 
 GitHub repository: printf
-     
 11. It's depressing when you're still around and your albums are out of print
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -330,7 +319,6 @@ Handle the 0 flag character for non-custom conversion specifiers.
 Repo:
 
 GitHub repository: printf
-     
 12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -339,7 +327,6 @@ Handle the - flag character for non-custom conversion specifiers.
 Repo:
 
 GitHub repository: printf
-     
 13. Print is the sharpest and the strongest weapon of our party
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -349,7 +336,6 @@ r : prints the reversed string
 Repo:
 
 GitHub repository: printf
-     
 14. The flood of print has turned reading into a process of gulping rather than savoring
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
@@ -359,7 +345,6 @@ R: prints the rot13'ed string
 Repo:
 
 GitHub repository: printf
-     
 15. *
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
