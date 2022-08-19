@@ -14,14 +14,6 @@ int print_specials(char next, va_list arg)
 	specialsStruct functs[] = {
 		{"c", print_char},
 		{"s", print_str},
-		{"d", print_int},
-		{"i", print_int},
-		{"u", print_unsigned},
-		{"b", print_unsignedToBinary},
-		{"o", print_oct},
-		{"x", print_hex},
-		{"S", print_STR},
-		{"X", print_HEX},
 		{NULL, NULL}
 	};
 	for (index = 0; functs[index].indentifier != NULL; index++)
@@ -40,7 +32,7 @@ int print_specials(char next, va_list arg)
 int _printf(const char *format, ...)
 {
 	unsigned int i;
-	int specials_printed = 0; char_printed = 0;
+	int specials_printed = 0, char_printed = 0;
 	va_list arg;
 
 	va_start(arg, format);

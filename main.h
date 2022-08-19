@@ -5,7 +5,11 @@
 #include <stdarg.h>
 
 int _putchar(char c);
-
+int print_specials(char next, va_list arg);
+int _printf(const char *format, ...);
+int print_char(va_list arg);
+int print_str(va_list arg);
+int print_STR(va_list arg);
 
 /**
  * struct specialsStruct - structure
