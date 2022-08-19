@@ -1,5 +1,5 @@
-#ifndef FUNCTIONS_ARRAY
-#define FUNCTIONS_ARRAY
+#include "main.h"
+#include <stdlib.h>
 /**
  * function - An array of functions
  * all the special characters for the printf function
@@ -12,5 +12,5 @@ print_type functions[] = {
 	{"o", print_oct},
 	{"u", print_unsigned},
 	{NULL, NULL}
-}
+};
 #endif /* FUNCTIONS_ARRAY */
