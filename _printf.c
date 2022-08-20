@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _printf - function that works as printf
- * Description: it does exactly like printf
+ * Discription: it does exactly like printf
  * @format: character string
  * Return: the number of the characters printed
  * and -1 for incomplete special function
