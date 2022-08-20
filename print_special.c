@@ -11,6 +11,8 @@ int print_specials(char next, va_list arg)
 	specialsStruct functs[] = {
 		{"c", print_char},
 		{"s", print_str},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 	for (index = 0; functs[index].indentifier != NULL; index++)
