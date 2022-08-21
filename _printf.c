@@ -1,9 +1,12 @@
 #include "main.h"
 /**
- * _printf - function that works as printf
- * @format: character string
+ * _printf - mimic printf from stdio
+ * Description: produces output according to a format
+ * write output to stdout, the standard output stream
+ * @format: character string composed of zero or more directives
  * Return: the number of the characters printed
- * and -1 for incomplete special function
+ * (excluding the null bytes used to end output to strings)
+ * return -1 for incomplete identifier error
  */
 int _printf(const char *format, ...)
 {
