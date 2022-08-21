@@ -7,6 +7,7 @@
 int print_int(va_list arg)
 {
 	unsigned int divisor = 1, i, resp, char_printed = 0;
+	int n = va_arg(arg, int);
 
 	if (n < 0)
 	{
