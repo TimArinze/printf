@@ -21,5 +21,5 @@ int _print_str(va_list arg);
 int _print_int(va_list arg);
 int _call_print_fn(char ch, va_list arg);
 int print_specials(char next, va_list arg);
-
+int print_decimal (int value);
 #endif /* MAIN_H */
