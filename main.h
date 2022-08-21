@@ -13,6 +13,7 @@ int print_char(va_list arg);
 int print_str(va_list arg);
 int print_int(va_list arg);
 void print_binary(unsigned int n, unsigned int *printed);
+int print_unsigned_to_binary(va_list arg);
 
 /**
  * struct specialsStruct - structure

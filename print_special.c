@@ -13,7 +13,7 @@ int print_specials(char next, va_list arg)
 		{"s", print_str},
 		{"d", print_int},
 		{"i", print_int},
-		{"b", print_binary},
+		{"b", print_unsigned_to_binary},
 		{NULL, NULL}
 	};
 	for (index = 0; functs[index].indentifier != NULL; index++)
