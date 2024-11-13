@@ -2,13 +2,14 @@
 /**
  * print_str - function that prints sting
  * @ptr: the pointer to print
+ * Return: The length of the string
  */
 int print_str(va_list ptr)
 {
 	char *str = va_arg(ptr, char *);
 	char *null = "(null)";
 	int i = 0;
-	
+
 	if (str == NULL)
 	{
 		while (null[i] != '\0')
@@ -16,12 +17,12 @@ int print_str(va_list ptr)
 			_putchar(null[i]);
 			i++;
 		}
-		return(i);
+		return (i);
 	}
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
 		i++;
 	}
-	return(i);
+	return (i);
 }

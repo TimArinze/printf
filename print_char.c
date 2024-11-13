@@ -7,5 +7,5 @@
 int print_char(va_list ptr)
 {
 	_putchar(va_arg(ptr, int));
-	return(1);
+	return (1);
 }
