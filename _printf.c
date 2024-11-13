@@ -53,7 +53,7 @@ int _printf(const char *format, ...)
  * find_and_print - A function that finds the identifier and print
  *@character: The supposed identifier
  *@ptr: pointer to the suppoesed function
- * Return: The count of the 
+ * Return: The count of the whatever is printed
  */
 int find_and_print(char character, va_list ptr)
 {
