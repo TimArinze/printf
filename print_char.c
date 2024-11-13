@@ -5,6 +5,10 @@
  */
 int print_char(va_list ptr)
 {
-	_putchar(va_arg(ptr, int));
+	char character = va_arg(ptr, int);
+
+	if (character == NULL)
+		return(0);
+	_putchar(character);
 	return(1);
 }
