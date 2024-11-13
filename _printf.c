@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 			}
 			if (!format[i])
 				return (-1);
-			find_and_print(format[i], ptr);
+			count = count + find_and_print(format[i], ptr);
 			continue;
 		}
 		_putchar(format[i]);
