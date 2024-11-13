@@ -7,7 +7,9 @@ int print_str(va_list ptr)
 {
 	char *str = va_arg(ptr, char *);
 	int i = 0;
-
+	
+	if (str == NULL)
+		return(i);
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
