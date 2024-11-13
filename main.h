@@ -16,15 +16,14 @@ void print_binary(unsigned int n, unsigned int *printed);
 int print_unsigned_to_binary(va_list arg);
 
 /**
- * struct specialsStruct - structure
- * definition of a printTypeStruct
- * @indentifier: type
- * @printer: funtion to print
+ * struct printfType - struct
+ * @type: the character str for the type
+ * @printer: the function pointer
  */
-typedef struct specialsStruct
+typedef struct printfType
 {
-	char *indentifier;
+	char *type;
 	int (*printer)(va_list);
-} specialsStruct;
+} printf_t;
 
 #endif

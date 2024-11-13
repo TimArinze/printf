@@ -1,50 +1,42 @@
 #include "main.h"
 /**
- * _printf - mimic printf from stdio
- * Description: produces output according to a format
- * write output to stdout, the standard output stream
- * @format: character string composed of zero or more directives
- * Return: the number of the characters printed
- * (excluding the null bytes used to end output to strings)
- * return -1 for incomplete identifier error
+ * _printf - a clone of printf
+ * @format: the start of the va_list and the string to print
+ * Return: the number of character printed
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i;
-	int specials_printed = 0, char_printed = 0;
-	va_list arg;
+	int i, j;
+	int count = 0;
+	va_list ptr;
 
-	va_start(arg, format);
-	if (format == NULL)
-		return (-1);
-	for (i = 0; format[i] != '\0'; i++)
+	printf_t printType[] = {
+		{"c", print_char},
+		{"s", print_str},
+		{NULL, NULL}
+	};
+	va_start(ptr, format);
+	i = 0;
+
+	for (i = 0; format[i]; i++)
 	{
-		if (format[i] != '%')
+		if (format[i] == '%')
 		{
-			_putchar(format[i]);
-			char_printed++;
+			i++;
+			for (j = 0; j < 3 ; j++)
+			{
+				if (format[i] == *printType[j].type)
+				{
+					count = count + printType[j].printer(ptr);
+					break;
+				}
+			}
 			continue;
 		}
-		if (format[i + 1] == '%')
-		{
-			_putchar('%');
-			char_printed++;
-			i++;
-			continue;
-		}
-		if (format[i + 1] == '\0')
-			return (-1);
-		specials_printed = print_specials(format[i + 1], arg);
-		if (specials_printed == -1 || specials_printed != 0)
-			i++;
-		if (specials_printed > 0)
-			char_printed += specials_printed;
-		if (specials_printed == 0)
-		{
-			_putchar('%');
-			char_printed++;
-		}
+		_putchar(format[i]);
+		count++;
 	}
-	va_end(arg);
-	return (char_printed);
+	va_end(ptr);
+
+	return(count);
 }
