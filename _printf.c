@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 	if (format == NULL)
-		return (count);
+		return (-1);
 	va_start(ptr, format);
 	i = 0;
 
