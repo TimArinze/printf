@@ -23,6 +23,11 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
+			if (format[i] == '%')
+			{
+				_putchar('%');
+				continue;
+			}
 			for (j = 0; j < 3 ; j++)
 			{
 				if (format[i] == *printType[j].type)
