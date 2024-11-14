@@ -7,11 +7,11 @@
 
 int print_int(va_list ptr)
 {
+	int counts = 0;
 	int num = va_arg(ptr, int);
-	int count = 0;
 
-	count = count + print_num(num);
-	return (count);
+	counts = counts + print_num(num);
+	return (counts);
 }
 
 /**
@@ -19,20 +19,22 @@ int print_int(va_list ptr)
  * @num: The number to be printed
  * Return: the count of the digits that makes up the number
  */
+
 int print_num(int number)
 {
-	int count = 0;
+	static int digits = 0;
 
 	if (number < 0)
 	{
 		_putchar('-');
 		number = number * (-1);
+		digits++;
 	}
 	if (number/10)
 	{
-		count++;
 		print_num(number/10);
 	}
 	_putchar(number%10+'0');
-	return (count);
+	digits++;
+	return (digits);
 }
