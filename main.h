@@ -11,8 +11,8 @@ int _printf(const char *format, ...);
 int print_char(va_list arg);
 int print_str(va_list arg);
 int find_and_print(char character, va_list ptr);
-void print_binary(unsigned int n, unsigned int *printed);
-int print_unsigned_to_binary(va_list arg);
+int print_int(va_list arg);
+int print_num(int num);
 
 /**
  * struct printfType - struct
