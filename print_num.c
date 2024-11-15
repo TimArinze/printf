@@ -24,10 +24,20 @@ int print_num(int number)
 {
 	int digits = 0;
 
+	 /** Try to handle INT_MIN a special case if not it will return
+         * "--214748364("
+         */
+	 if (number == -2147483648)
+        {
+                _putchar('-');
+                _putchar('2');
+                number = 147483648;
+		digits = digits + 2;
+        }
 	if (number < 0)
 	{
 		_putchar('-');
-		number = number * (-1);
+		number = -number;
 		digits++;
 	}
 	if (number/10)
