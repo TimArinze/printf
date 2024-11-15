@@ -22,7 +22,7 @@ int print_int(va_list ptr)
 
 int print_num(int number)
 {
-	static int digits = 0;
+	int digits = 0;
 
 	if (number < 0)
 	{
@@ -32,7 +32,8 @@ int print_num(int number)
 	}
 	if (number/10)
 	{
-		print_num(number/10);
+		digits +=print_num(number/10);
+		/* Recursive call for all digits except the last one */
 	}
 	_putchar(number%10+'0');
 	digits++;
