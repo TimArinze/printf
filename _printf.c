@@ -8,6 +8,7 @@ printf_t printType[] = {
 	{"s", print_str},
 	{"d", print_int},
 	{"i", print_int},
+	{"b", print_binary},
 	{NULL, NULL}
 };
 
