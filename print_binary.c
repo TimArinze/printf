@@ -30,6 +30,7 @@ int negative_binary(int number)
 	unsigned int mask = 1u << 31;
 	/* Highest index for 32bits machine */
 
+	number++; /* Adding one to the figure */
 	number = -number;
 	/* To remove the - sign */
 
