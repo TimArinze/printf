@@ -15,6 +15,24 @@ int print_int(va_list ptr)
 }
 
 /**
+ * print_unsigned_int - A function that prints unsigned integer
+ * @num: The number to print
+ * Return: The count of what is printed
+ */
+int print_unsigned_int(va_list ptr)
+{
+	int count = 0;
+
+	int num = va_arg(ptr, int);
+
+	if (num < 0)
+		num = -num;
+	count = count + print_num(num);
+
+	return (count);
+}
+
+/**
  * print_num - A function that prints integer using putchar recursively
  * @num: The number to be printed
  * Return: the count of the digits that makes up the number

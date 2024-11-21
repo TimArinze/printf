@@ -9,6 +9,7 @@ printf_t printType[] = {
 	{"d", print_int},
 	{"i", print_int},
 	{"b", print_binary},
+	{"u", print_unsigned_int},
 	{NULL, NULL}
 };
 

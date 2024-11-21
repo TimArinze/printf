@@ -14,6 +14,7 @@ int find_and_print(char character, va_list ptr);
 int print_int(va_list arg);
 int print_num(int num);
 int print_binary(va_list arg);
+int print_unsigned_int(va_list arg);
 
 /**
  * struct printfType - struct
