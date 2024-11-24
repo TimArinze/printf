@@ -15,23 +15,41 @@ int print_int(va_list ptr)
 }
 
 /**
+ * print_unsigned_negative - A function that prints negative unsigned
+ * @num: the number
+ * Return: The count
+ */
+int print_unsigned_negative(int num)
+{
+	unsigned int binary = 1u << 31;
+	unsigned int count = 0;
+	unsigned int number;
+
+	num = -num;
+	number = (unsigned int)num;
+
+	number = binary - number;
+	count = count + print_num(number);
+
+	return (count);
+}
+
+/**
  * print_unsigned_int - A function that prints unsigned integer
  * @num: The number to print
  * Return: The count of what is printed
  */
 int print_unsigned_int(va_list ptr)
 {
-	int count = 0;
-
+	int counts = 0;
 	int num = va_arg(ptr, int);
 
 	if (num < 0)
-		num = -num;
-	count = count + print_num(num);
-
-	return (count);
+		counts = counts + print_unsigned_negative(num);
+	else
+		counts = counts + print_num(num);
+	return (counts);
 }
-
 /**
  * print_num - A function that prints integer using putchar recursively
  * @num: The number to be printed
